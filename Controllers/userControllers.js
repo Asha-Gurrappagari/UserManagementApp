@@ -21,7 +21,7 @@ let register = async (req,res)=>{
         },(err,token)=>{
             if(err) throw err
             res.send(token)
-        }).catch(()=>console.log(`error in signin JWT`))   
+        })   
 }
 
 let login = async (req,res)=>{
